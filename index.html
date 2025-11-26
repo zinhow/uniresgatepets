@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instituição UniResgatePets</title>
+    <meta
+      name="description"
+      content="UniResgatePets, fundadora do abrigo Protetora por Amor em Inhumas Goiânia, luta para manter 140 animais. Ajude a instituição UniResgatePets a continuar salvando vidas."
+    />
+    <link rel="icon" href="images/logotop.webp" type="image/png" />
+    <link rel="preload" as="image" href="https://abrigocaocaramelo.com/v1/Banner.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+            <style>.social-section h2 {
+  color: #1c1c1c;
+  margin-bottom: 10px;
+}
+:root {
+  --bg-100: #fdf6ea;
+  --bg-200: #f6e0cf;
+  --blue-400: #fc8400;
+  --blue-500: #ff7b00;
+  --blue-600: #ff7b00;
+  --blue-700: #ff9100;
+  --text-900: #2c1b16;
+  --text-600: #5b3f33;
+  --text-light: #ffffff;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --shadow-card: 0 16px 36px rgba(182, 90, 47, 0.18);
+  --shadow-soft: 0 10px 24px rgba(182, 90, 47, 0.12);
+  --icon-color: #fc8400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: linear-gradient(180deg, var(--bg-100) 0%, #ffffff 100%);
+  color: var(--text-900);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: #fdfefe;
+  display: flex;
+  flex-direction: column;
+  box-shadow: none;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: rgba(255, 252, 247, 0.95);
+  border-bottom: 1px solid rgba(182, 90, 47, 0.14);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topbar--hidden {
+  transform: translateY(-110%);
+}
+
+.topbar--shadow {
+  box-shadow: 0 10px 24px rgba(15, 32, 62, 0.12);
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 4px;
+  box-shadow: 0 6px 16px rgba(21, 101, 192, 0.18);
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--blue-700);
+  line-height: 1.1;
+}
+
+.brand-copy strong {
+  font-size: 13px;
+  letter-spacing: 0.4px;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.topbar-actions a {
+  font-weight: 600;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: var(--blue-600);
+}
+
+.topbar-actions .donate-link {
+  background: var(--blue-600);
+  color: var(--text-light);
+  box-shadow: 0 12px 20px rgba(182, 90, 47, 0.2);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 0 0 28px;
+}
+
+.hero-banner {
+  margin: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+}
+
+.crisis-headline {
+  margin: 16px 16px 20px;
+  background: #fc8400;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 32px rgba(208, 98, 128, 0.16);
+  padding: 22px 18px;
+  color: white;
+}
+
+.headline-inner {
+  display: grid;
+  gap: 12px;
+}
+
+.crisis-headline h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.4;
+  color: white;
+  text-transform: none;
+}
+
+.crisis-headline p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.video-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 16px;
+  align-items: center;
+}
+
+.video-wrapper {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: #0f172a;
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper vturb-smartplayer,
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+}
+
+.video-placeholder {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(182, 90, 47, 0.35),
+    rgba(44, 27, 22, 0.86)
+  );
+  color: #fcefe3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.video-placeholder p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.video-placeholder span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, var(--blue-600), var(--blue-500));
+  background: linear-gradient(135deg, var(--blue-600), var(--blue-500));
+  color: var(--text-light);
+  box-shadow: 0 18px 32px rgba(129, 57, 33, 0.28);
+}
+
+.primary-button:hover,
+.primary-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 40px rgba(129, 57, 33, 0.32);
+}
+
+.secondary-button {
+  background: rgba(182, 90, 47, 0.12);
+  color: var(--blue-600);
+}
+
+.video-block .primary-button {
+  background: linear-gradient(135deg, #2ecc71, #1f9a55);
+  box-shadow: 0 18px 36px rgba(31, 154, 85, 0.28);
+}
+
+.video-block .primary-button:hover,
+.video-block .primary-button:focus-visible {
+  box-shadow: 0 22px 44px rgba(31, 154, 85, 0.34);
+}
+
+.about-section {
+  display: grid;
+  gap: 18px;
+  padding: 0 16px;
+}
+
+.about-section h2 {
+  font-size: 26px;
+  color: var(--blue-700);
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-media img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-content {
+  display: grid;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--text-600);
+  line-height: 1.55;
+}
+
+.about-content p {
+  margin: 0;
+}
+
+.about-content em {
+  color: var(--blue-600);
+}
+
+.about-content blockquote {
+  margin: 0;
+  padding: 12px 14px;
+  border-left: 4px solid var(--blue-500);
+  background: rgba(91, 192, 248, 0.18);
+  border-radius: 12px;
+  font-style: italic;
+  color: var(--blue-700);
+}
+
+.purpose-section {
+  margin: 0 16px;
+  padding: 22px 18px 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.96) 0%,
+    rgba(219, 232, 255, 0.82) 100%
+  );
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 14px;
+  text-align: center;
+}
+
+.purpose-section h2 {
+  margin: 0;
+  color: var(--blue-700);
+  text-transform: uppercase;
+}
+
+.purpose-lead {
+  margin: 0;
+  font-weight: 600;
+  color: var(--blue-600);
+}
+
+.purpose-content {
+  display: grid;
+  gap: 12px;
+  text-align: left;
+  color: var(--text-600);
+  line-height: 1.55;
+  font-size: 16px;
+}
+
+.purpose-content p {
+  margin: 0;
+}
+
+.purpose-content em {
+  color: var(--blue-600);
+}
+
+.impact-intro,
+.pix-intro,
+.buddies-intro,
+.social-section p {
+  margin: 0;
+  color: var(--text-600);
+  font-size: 14px;
+}
+
+.impact-donation-section .impact-intro {
+  color: #fc8400;
+}
+
+.content-tabs {
+  margin: 0 16px;
+  margin-top: 8px;
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 18px 16px 20px;
+  display: grid;
+  gap: 18px;
+}
+
+.about-media img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.tab-nav {
+  display: flex;
+  gap: 8px;
+  background: rgba(212, 175, 55, 0.15); /* dourado caramelo suave */
+  padding: 6px;
+  border-radius: 14px;
+}
+
+.tab-button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--blue-600);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.tab-button:hover,
+.tab-button:focus-visible {
+  background: rgba(217, 119, 66, 0.18);
+}
+
+.tab-button.active {
+  background: #ffffff;
+  color: var(--blue-700);
+  box-shadow: 0 8px 16px rgba(182, 90, 47, 0.18);
+}
+
+.tab-panels {
+  position: relative;
+  display: grid;
+}
+
+.tab-panel {
+  display: none;
+  animation: fadeIn 0.25s ease;
+}
+
+.tab-panel.active {
+  display: grid;
+  gap: 14px;
+  text-align: left;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recognition-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.badge-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background: rgba(182, 90, 47, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 18px rgba(182, 90, 47, 0.12);
+}
+
+.badge-icon {
+  font-size: 20px;
+}
+
+.badge-card h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  color: var(--blue-700);
+}
+
+.badge-card p {
+  margin: 0;
+  color: var(--text-600);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.faq-section {
+  margin: 0 16px;
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 20px 18px 24px;
+  display: grid;
+  gap: 16px;
+  text-align: left;
+}
+
+.faq-section h2 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--text-900);
+  text-align: center;
+}
+
+.faq-list {
+  display: grid;
+  gap: 10px;
+}
+
+.faq-item {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fffaf4;
+  border: 1px solid rgba(175, 140, 109, 0.18);
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.faq-item.open {
+  box-shadow: 0 12px 24px rgba(175, 140, 109, 0.16);
+  background: #fff1e4;
+}
+
+.faq-question {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #715a4b;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.faq-item.open .faq-question {
+  background: rgba(233, 195, 167, 0.24);
+}
+
+.faq-toggle {
+  font-size: 18px;
+  color: #c48b60;
+  transition: transform 0.2s ease;
+}
+
+.faq-item.open .faq-toggle {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 16px;
+  color: #615349;
+  line-height: 1.55;
+  font-size: 14px;
+  transition: max-height 0.25s ease, padding 0.25s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 240px;
+  padding: 0 16px 16px;
+}
+
+.impact-donation-section h2,
+.pix-section h2,
+.buddies-section h2,
+.social-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color: #1c1c1c;
+}
+
+.impact-donation-section {
+  background: #fc8400;
+  border-radius: var(--radius-lg);
+  padding: 14px 14px 20px;
+  position: relative;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  margin: 0 16px;
+  text-align: center;
+  color: black;
+}
+
+.impact-donation-section::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 175, 55, 0.85),
+    /* dourado caramelo #D4AF37 */ transparent
+  );
+}
+
+.impact-section {
+  gap: 14px;
+}
+
+.impact-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.impact-donation-section h2 {
+  color: white;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+}
+
+.impact-donation-section h2 span {
+  display: block;
+}
+
+.impact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 32px;
+  border: 1px solid rgba(240, 126, 89, 0.22);
+  box-shadow: 0 10px 24px rgba(217, 116, 82, 0.14);
+}
+
+.impact-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(217, 116, 82, 0.22);
+}
+
+.impact-value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fc8400;
+  color: var(--text-light);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 5px 12px rgba(232, 125, 103, 0.26);
+}
+
+.impact-description {
+  color: #6f4d3f;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.impact-footer {
+  text-align: center;
+  font-size: 0.95rem;
+  color: white;
+  font-weight: 600;
+}
+
+.impact-cta {
+  margin-top: 16px;
+  background: linear-gradient(135deg, #3bcf8f, #1f9a55);
+  box-shadow: 0 24px 46px rgba(31, 154, 85, 0.3);
+  padding: 16px 28px;
+  font-size: 16px;
+  min-width: 220px;
+}
+
+.impact-cta:hover,
+.impact-cta:focus-visible {
+  box-shadow: 0 28px 56px rgba(31, 154, 85, 0.36);
+}
+
+.pix-section {
+  background: #fc8400;
+
+  border-radius: var(--radius-lg);
+  padding: 26px 18px 32px;
+  color: #6f4d3f;
+  margin: 0 16px;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(208, 144, 67, 0.25);
+}
+
+.pix-section h2 {
+  color: #c25a43;
+  font-size: 24px;
+}
+
+.pix-wrapper {
+  display: grid;
+  gap: 20px;
+}
+
+.pix-illustration img {
+  max-width: 240px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(217, 116, 82, 0.26);
+}
+
+.pix-content {
+  display: grid;
+  gap: 18px;
+}
+
+.pix-instructions {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 18px 18px 20px;
+  border: 1px solid rgba(240, 126, 89, 0.18);
+  box-shadow: 0 10px 24px rgba(217, 116, 82, 0.12);
+  text-align: left;
+}
+
+.pix-instructions h3 {
+  color: #c25a43;
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.pix-instructions ol {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 10px;
+  color: #6f4d3f;
+  font-size: 14px;
+}
+
+.pix-key-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px 18px;
+  border: 1px solid rgba(240, 126, 89, 0.18);
+  box-shadow: 0 24px 48px rgba(217, 116, 82, 0.18);
+  display: grid;
+  gap: 12px;
+}
+
+.pix-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c25a43;
+}
+
+.pix-key {
+  background: #fff4ee;
+  padding: 18px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: #8f3a30;
+  word-break: break-word;
+  box-shadow: inset 0 0 0 2px rgba(240, 126, 89, 0.25);
+  letter-spacing: 0.4px;
+}
+
+.pix-recipient {
+  font-size: 13px;
+  color: #6f4d3f;
+}
+
+.pix-copy-btn {
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #3bcf8f, #1f9a55);
+  color: var(--text-light);
+  padding: 14px 20px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 24px 44px rgba(31, 154, 85, 0.28);
+  cursor: pointer;
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+.pix-copy-btn:hover,
+.pix-copy-btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 44px rgba(31, 154, 85, 0.34);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 24px 44px rgba(232, 125, 103, 0.28);
+  }
+  50% {
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 28px 48px rgba(232, 125, 103, 0.34);
+  }
+}
+
+.copy-feedback {
+  display: none;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translate(-50%, 120%);
+  background: rgba(15, 32, 62, 0.92);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: 0 20px 40px rgba(15, 32, 62, 0.35);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.toast--visible {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.buddies-section {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.99) 0%,
+    rgba(255, 246, 236, 0.4) 100%
+  );
+  border-radius: var(--radius-lg);
+  padding: 20px 16px 24px;
+  box-shadow: var(--shadow-card);
+  margin: 0 16px;
+  text-align: center;
+}
+
+.buddy-slider {
+  position: relative;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.buddy-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.buddy-card {
+  min-width: 100%;
+  background: #fffdfa;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 22px rgba(143, 119, 95, 0.1);
+  padding: 18px 22px;
+  display: grid;
+  gap: 12px;
+  text-align: left;
+}
+
+.buddy-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(143, 119, 95, 0.12);
+}
+
+.buddy-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.buddy-copy h3 {
+  margin: 0;
+  color: #6b5447;
+  font-size: 18px;
+}
+
+.buddy-copy p {
+  margin: 0;
+  color: #5f534a;
+  line-height: 1.5;
+}
+
+.buddy-controls {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.buddy-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #f9e4d2;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.buddy-dot.active {
+  background: #e9c3a7;
+  transform: scale(1.2);
+}
+
+.buddy-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(233, 195, 167, 0.22);
+  color: #7b6253;
+  font-size: 24px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.buddy-arrow:hover {
+  transform: translateY(-2px);
+  background: rgba(233, 195, 167, 0.34);
+}
+
+.social-section {
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid rgba(16, 36, 60, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 24px 18px 30px;
+  box-shadow: 0 16px 28px rgba(16, 36, 60, 0.12);
+  margin: 0 16px;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #2a2a2a;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(16, 36, 60, 0.12);
+  box-shadow: 0 12px 24px rgba(16, 36, 60, 0.08);
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 32px rgba(16, 36, 60, 0.16);
+}
+
+.si {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.si-ig {
+  background-image: url("../images/Instagram_icon.png");
+}
+
+.si-tk {
+  background-image: url("../images/3046121.png");
+  background-size: cover;
+}
+
+.si-yt {
+  background-image: url("../images/image-removebg-preview-_1_.webp");
+}
+
+.si-fb {
+  background-image: url("../images/Facebook_Logo.png");
+}
+
+.social-cta {
+  margin-top: 22px;
+  background: linear-gradient(135deg, #2ecc71, #1f9a55);
+  box-shadow: 0 20px 38px rgba(31, 154, 85, 0.28);
+}
+
+.social-cta:hover,
+.social-cta:focus-visible {
+  box-shadow: 0 24px 48px rgba(31, 154, 85, 0.34);
+}
+
+.footer {
+  margin-top: 20px;
+  background: #2b3038;
+  color: #f5f5f5;
+  padding: 32px 20px 24px;
+}
+
+.footer-inner {
+  display: grid;
+  gap: 24px;
+}
+
+.footer-links,
+.footer-social {
+  text-align: center;
+  display: grid;
+  gap: 10px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-bottom {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .crisis-headline {
+    margin: 24px auto 28px;
+    max-width: 760px;
+    padding: 28px 32px;
+  }
+
+  .crisis-headline h2 {
+    font-size: 24px;
+  }
+
+  .crisis-headline p {
+    font-size: 16px;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    text-align: left;
+  }
+
+  .footer-links,
+  .footer-social {
+    text-align: left;
+  }
+
+  .social-links {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .buddy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 480px) {
+  .buddy-card img {
+    height: 180px;
+  }
+}
+.toastfy {
+  position: fixed;
+  top: -60px; /* começa fora da tela */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2ecc71; /* verde premium */
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 22px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+  z-index: 999999;
+  opacity: 0;
+  transition: opacity 0.4s ease, top 0.4s ease;
+}
+
+.toastfy--visible {
+  top: 20px; /* posição final */
+  opacity: 1;
+}
+</style>
+    <script defer="" src="js/script.js"></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1806544813284370");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1806544813284370&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+
+  <body>
+    <div class="app">
+      <span id="topo"></span>
+      <header class="topbar" id="inicio">
+        <a class="topbar-brand" href="index.html#topo" aria-label="Instituição UniResgatePets">
+          <img
+            class="brand-logo"
+            src="images/logo.jpeg"
+            alt="Logotipo UniResgatePets"
+          />
+          <div class="brand-copy">
+            <strong>UniResgatePets</strong>
+            <span>Abrigo para Cães</span>
+          </div>
+        </a>
+        <nav class="topbar-actions">
+          <a href="index.html#topo">Início</a>
+          <a
+            style="
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              padding: 10px 20px;
+              background: #fc8400;
+              color: #ffffff;
+              font-weight: 600;
+              font-size: 15px;
+              border-radius: 40px;
+              text-decoration: none;
+              white-space: nowrap;
+              border: 2px solid #a45a22;
+              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+              cursor: pointer;
+              transition: 0.2s;
+            "
+            href="index.html#doe"
+            class="donate-link"
+            data-donate=""
+            data-url="../NOVO/gerarpix/index.php"
+            >Doe aqui</a
+          >
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero-banner">
+          <img
+            src="images/Banner2.png"
+            alt="Verônica no abrigo Protetora por Amor com os cães resgatados"
+          />
+        </section>
+
+        
+
+        <section class="crisis-headline">
+          <div class="headline-inner">
+            <h2>
+              O abrigo está enfrentando o momento mais difícil da sua história.
+            </h2>
+
+            <p>
+              As contas não param de chegar… e hoje já ultrapassamos
+              <strong>R$ 11.000 em dívidas</strong>. Todos os dias eu me
+              pergunto:
+              <em>“Meu Deus… como vou garantir o amanhã deles?”</em>
+            </p>
+
+            <p>
+              É por isso que estou aqui. Para pedir com humildade, com o coração
+              apertado e com a esperança de que você não vire as costas para
+              quem só tem a nós.
+            </p>
+          </div>
+        </section>
+
+        <section class="content-tabs" id="sobre">
+          <div
+            class="tab-nav"
+            role="tablist"
+            aria-label="Informações sobre o abrigo"
+            style="justify-content: center"
+          >
+            <button
+              class="tab-button active"
+              data-tab="quem-somos"
+              role="tab"
+              aria-selected="true"
+              style="
+                width: auto;
+                min-width: 140px;
+                padding: 10px 24px;
+                margin: 0 auto;
+                display: inline-block;
+              "
+            >
+              Quem Somos
+            </button>
+          </div>
+
+          <div class="tab-panels">
+            <article class="tab-panel active" id="quem-somos" role="tabpanel">
+              <div class="about-content">
+                <p>
+                  O <strong>Abrigo Cão Caramelo</strong> hoje luta para
+                  sobreviver e não fechar as portas. As contas se acumularam, a
+                  ração já acabou mais de uma vez e estamos devendo
+                  <strong>R$ 15.000 ao veterinário</strong>.
+                </p>
+
+                <p>
+                  É duro admitir, mas chegamos ao ponto em que manter o abrigo
+                  vivo virou uma <strong>batalha diária</strong>. Cada dia é uma
+                  nova tensão: “vai ter comida?”, “vai dar pra pagar o básico?”,
+                  “qual vida corre risco hoje?".
+                </p>
+
+                <p>
+                  Mesmo assim, eu acredito que tenho uma missão nesse mundo:
+                  cuidar desses pequenos. Cada resgate começa com uma história
+                  de dor… mas sempre termina com
+                  <strong>amor, cuidado e esperança</strong>. E é essa fé que me
+                  faz continuar, mesmo quando tudo diz para desistir.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="impact-donation-section" id="como-ajudar">
+          <h2><span>Como você!</span><span>pode fazer a diferença</span></h2>
+
+          <div class="impact-section">
+            <div class="impact-grid">
+              <div class="impact-item">
+                <span class="impact-value">🐾 R$ 25</span>
+                <span class="impact-description">
+                  Alimenta 1 cão por 2 dias e evita que ele durma com fome.
+                </span>
+              </div>
+
+              <div class="impact-item">
+                <span class="impact-value">🐾 R$ 50</span>
+                <span class="impact-description">
+                  Sustenta 2 cães por 5 dias ou ajuda com vermífugo.
+                </span>
+              </div>
+
+              <div class="impact-item">
+                <span class="impact-value">🐾 R$ 100</span>
+                <span class="impact-description">
+                  Garante ração e cuidados básicos para 2 cães por 15 dias.
+                </span>
+              </div>
+
+              <div class="impact-item">
+                <span class="impact-value">🐾 R$ 200</span>
+                <span class="impact-description">
+                  Ajuda no tratamento veterinário de um cão doente.
+                </span>
+              </div>
+
+              <div class="impact-item">
+                <span class="impact-value">🐾 R$ 500</span>
+                <span class="impact-description">
+                  Sustenta de 5 a 6 animais com alimento e cuidados por 15 dias.
+                </span>
+              </div>
+            </div>
+
+            <p class="impact-footer">Toda doação é um ato de amor. 🐾</p>
+          </div>
+
+          <a
+            class="primary-button impact-cta"
+            data-donate=""
+            data-url="../NOVO/gerarpix/index.php"
+            href="index.html#doe"
+          >
+            Quero ajudar
+          </a>
+        </section>
+
+        <section class="pix-section" id="doe">
+          <h2 style="color: white">Como doar via PIX</h2>
+          <div class="pix-wrapper">
+            <div class="pix-illustration">
+              
+            </div>
+            <div class="pix-content">
+              <div class="pix-instructions">
+                <h3>Passos para doar:</h3>
+                <ol>
+                  <li>
+                    <strong>Copie a chave PIX</strong> clicando no botão abaixo.
+                  </li>
+                  <li>
+                    <strong>Abra o app do seu banco</strong> e escolha
+                    <strong>PIX > Transferir</strong>.
+                  </li>
+                  <li>
+                    <strong>Cole a chave</strong>, informe o valor e confirme a
+                    doação.
+                  </li>
+                  <li>
+                    <strong>Pronto!</strong> Sua ajuda chega na hora para os
+                    nossos resgates.
+                  </li>
+                </ol>
+              </div>
+              <div class="pix-key-card">
+                <span class="pix-label">Chave PIX (e-mail)</span>
+
+                <div class="pix-key">
+                  <p id="pixKey" style="font-size: 14px">
+                    <a>Uniresgatepets@gmail.com</a>
+                  </p>
+                </div>
+
+                <span class="pix-recipient">
+                  Recebedor: <strong>Giovanna Campos Pacheco</strong>
+                </span>
+
+                <button class="pix-copy-btn" type="button" id="copyPixBtn">
+                  <span class="copy-icon">📋</span>
+                  Copiar chave PIX
+                </button>
+
+                <span class="copy-feedback" id="copyFeedback"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+          const copyButton = document.getElementById("copyPixBtn");
+          const pixKeyEl = document.getElementById("pixKey");
+
+          if (copyButton && pixKeyEl) {
+            copyButton.addEventListener("click", async () => {
+              const key = pixKeyEl.textContent.trim();
+              if (!key) return;
+
+              try {
+                await navigator.clipboard.writeText(key);
+                showToastfy("Chave PIX copiada com sucesso!");
+                
+                if (typeof fbq !== 'undefined') {
+                  fbq('track', 'Purchase', {
+                    currency: 'BRL',
+                    value: 0.00
+                  });
+                  console.log('[kodex] Evento Purchase disparado com sucesso para o Facebook Pixel');
+                } else {
+                  console.log('[kodex] Facebook Pixel não está carregado - evento Purchase não foi disparado');
+                }
+              } catch (error) {
+                showToastfy(
+                  "Não foi possível copiar. Copie manualmente: " + key
+                );
+              }
+            });
+          }
+          function showToastfy(message) {
+            const existing = document.querySelector(".toastfy");
+            if (existing) existing.remove();
+
+            const toast = document.createElement("div");
+            toast.className = "toastfy";
+            toast.textContent = message;
+
+            document.body.appendChild(toast);
+
+            void toast.offsetWidth;
+            toast.classList.add("toastfy--visible");
+
+            setTimeout(() => {
+              toast.classList.remove("toastfy--visible");
+              setTimeout(() => toast.remove(), 400);
+            }, 2500);
+          }
+        </script>
+        <style>
+          .toastfy {
+            position: fixed;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2ecc71;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 14px 22px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            z-index: 999999;
+            opacity: 0;
+            transition: opacity 0.4s ease, top 0.4s ease;
+          }
+
+          .toastfy--visible {
+            top: 20px;
+            opacity: 1;
+          }
+        </style>
+        <section class="buddies-section" id="amiguinhos">
+          <h2>A rotina de amor da UniResgatePets</h2>
+          <p class="buddies-intro">
+            A UniResgatePets dedica a vida a cuidar de cada um deles. Arraste para o
+            lado e veja um pouco desse amor acontecendo todos os dias.
+          </p>
+
+          <div class="buddy-slider">
+            <div class="buddy-track">
+              <!-- CARD 1 -->
+              <article class="buddy-card">
+                <img
+                  src="images/1.webp"
+                  alt="UniResgatePets alimentando os cães resgatados"
+                  style="
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+                    object-position: center -25px;
+                    border-radius: 12px;
+                  "
+                />
+                <div class="buddy-copy">
+                  <h3>Amor que alimenta</h3>
+                  <p>
+                    Todos os dias, a UniResgatePets se senta no chão do abrigo para
+                    alimentar os cães que ainda têm medo do mundo. É na
+                    paciência dela que eles voltam a confiar.
+                  </p>
+                </div>
+              </article>
+
+              <!-- CARD 2 -->
+              <article class="buddy-card">
+                <img
+                  src="images/2.webp"
+                  alt="UniResgatePets abraçando um dos cães do abrigo"
+                  style="
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+                    object-position: center -25px;
+                    border-radius: 12px;
+                  "
+                />
+                <div class="buddy-copy">
+                  <h3>Carinho que cura</h3>
+                  <p>
+                    Muitos chegam machucados e assustados. No colo da Tia
+                    Cleide, eles encontram o primeiro gesto de carinho depois de
+                    muito sofrimento.
+                  </p>
+                </div>
+              </article>
+
+              <!-- CARD 3 -->
+              <article class="buddy-card">
+                <img
+                  src="images/3.webp"
+                  alt="UniResgatePets segurando um filhote resgatado"
+                  style="
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+                    object-position: center -80px;
+                    border-radius: 12px;
+                  "
+                />
+                <div class="buddy-copy">
+                  <h3>Cuidado desde os pequeninos</h3>
+                  <p>
+                    Filhotes precisam de atenção especial. A UniResgatePets cuida de
+                    cada um como se fosse parte da família — remédio, leite,
+                    proteção e colo.
+                  </p>
+                </div>
+              </article>
+
+              <!-- CARD 4 -->
+              <article class="buddy-card">
+                <img
+                  src="images/5.JPG"
+                  alt="UniResgatePets cuidando dos cães no abrigo"
+                  style="
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+                    object-position: center -150px;
+                    border-radius: 12px;
+                  "
+                />
+                <div class="buddy-copy">
+                  <h3>Um abrigo que salva vidas</h3>
+                  <p>
+                    Entre caminhões e casinhas improvisadas, a UniResgatePets
+                    distribui ração, água e afeto para todos. Aqui, nenhum
+                    animal passa fome ou frio enquanto ela estiver de pé.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="buddy-controls">
+              <button
+                class="buddy-arrow"
+                data-buddy="prev"
+                aria-label="Anterior"
+              >
+                ‹
+              </button>
+              <div class="buddy-dots">
+                <button class="buddy-dot active" aria-label="Slide 1"></button>
+                <button class="buddy-dot" aria-label="Slide 2"></button>
+                <button class="buddy-dot" aria-label="Slide 3"></button>
+                <button class="buddy-dot" aria-label="Slide 4"></button>
+              </div>
+              <button
+                class="buddy-arrow"
+                data-buddy="next"
+                aria-label="Próximo"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+          <h2>Dúvidas frequentes</h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Como posso ajudar o abrigo?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Doe via PIX, compartilhe a campanha e participe como
+                  voluntário em mutirões de limpeza, alimentação e cuidados
+                  veterinários.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Para onde vai a minha doação?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Toda contribuição é usada para comprar ração, medicamentos,
+                  cirurgias emergenciais e reformas dos canis para manter os
+                  cães seguros.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Posso visitar o abrigo pessoalmente?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Sim! Estamos na região de Inhumas/GO. Fale com a equipe pelas
+                  redes sociais e agende uma visita para conhecer os resgates.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Quero adotar. Qual é o processo?</span>
+                <span class="faq-toggle">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Entre em contato, preencha o formulário de adoção responsável
+                  e agendaremos uma entrevista para garantir o bem-estar do
+                  animal e da família.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="social-section">
+          <h2>Acompanhe o abrigo</h2>
+          <div class="social-links">
+            <a
+              class="social-link"
+              href="https://www.instagram.com/uniresgatepets"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="si si-ig"></span>
+              Instagram
+            </a>
+            <!-- <a
+              class="social-link"
+              href="https://www.tiktok.com/@abrigoprotetoraporamor"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="si si-tk"></span>
+              TikTok
+            </a> -->
+            <a
+              class="social-link"
+              href="https://wa.me/#?text=Ol%C3%A1%20vim%20pelo%20site%20do%20abrigo%20C%C3%A3o%20Caramelo"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="si si-yt"></span>
+              WhatsApp
+            </a>
+
+            <a
+              class="social-link"
+              href="https://www.facebook.com/#"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="si si-fb"></span>
+              Facebook
+            </a>
+          </div>
+          <a class="primary-button social-cta" href="index.html#doe">Doe agora</a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-links">
+            <h3>Navegação</h3>
+            <a href="index.html#topo">Início</a>
+            <a href="index.html#quem-somos">Quem Somos</a>
+            <a href="index.html#proposito">Nosso Propósito</a>
+            <a href="index.html#como-ajudar">Como ajudar</a>
+            <a href="index.html#doe">Doe via PIX</a>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contato</h3>
+            <a
+              href="https://wa.me/#?text=Ol%C3%A1%20vim%20pelo%20site%20do%20Salve%20C%C3%A3o%20e%20quero%20ajudar"
+              target="_blank"
+              rel="noopener"
+            >
+              WhatsApp: #
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Instituição UniResgatePets • CNPJ: 63.322.412/0001-22</p>
+          <p>
+            © <span id="currentYear"></span> UniResgatePets. Todos os direitos
+            reservados.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
